@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason
 
 ---@type LazySpec
@@ -13,6 +11,17 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
+
+        "pyright",
+        "elixir-ls",
+        "clangd",
+        "gopls",
+
+        "html-lsp",
+        "css-lsp",
+
+        "postgres-language-server",
+        "markdown-oxide",
 
         -- install formatters
         "stylua",
